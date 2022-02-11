@@ -1910,8 +1910,8 @@ charenc@~0.0.1:
   resolved "https://registry.yarnpkg.com/charenc/-/charenc-0.0.2.tgz#c0a1d2f3a7092e03774bfa83f14c0fc5790a8667"
 
 chownr@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/chownr/-/chownr-1.0.1.tgz#e2a75042a9551908bebd25b8523d5f9769d79181"
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/chownr/-/chownr-1.1.4.tgz#6fc9d7b42d32a583596337666e7d08084da2cc6b"
 
 ci-info@^1.0.0:
   version "1.1.3"
@@ -2060,7 +2060,7 @@ compressible@~2.0.13:
 
 compression@^1.7.1:
   version "1.7.2"
-  resolved "http://registry.npmjs.org/compression/-/compression-1.7.2.tgz#aaffbcd6aaf854b44ebb280353d5ad1651f59a69"
+  resolved "https://registry.npmjs.org/compression/-/compression-1.7.2.tgz#aaffbcd6aaf854b44ebb280353d5ad1651f59a69"
   dependencies:
     accepts "~1.3.4"
     bytes "3.0.0"
@@ -5574,15 +5574,16 @@ react-native-maps@0.21.0:
     babel-plugin-module-resolver "^2.3.0"
     babel-preset-react-native "1.9.0"
 
-react-native-safe-area-view@^0.7.0:
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/react-native-safe-area-view/-/react-native-safe-area-view-0.7.0.tgz#38f5ab9368d6ef9e5d18ab64212938af3ec39421"
-  dependencies:
-    hoist-non-react-statics "^2.3.1"
-
 react-native-safe-area-view@^0.8.0:
   version "0.8.0"
   resolved "https://registry.yarnpkg.com/react-native-safe-area-view/-/react-native-safe-area-view-0.8.0.tgz#22d78cb8e8658d04a10cd53c1546e0bc86cb7aea"
+  dependencies:
+    hoist-non-react-statics "^2.3.1"
+
+"react-native-safe-area-view@github:ChrisBlood/react-native-safe-area-view":
+  version "0.7.0"
+  uid e7d45f5b20af8cd90e9ff5aaa10224be713ec1fe
+  resolved "https://codeload.github.com/ChrisBlood/react-native-safe-area-view/tar.gz/e7d45f5b20af8cd90e9ff5aaa10224be713ec1fe"
   dependencies:
     hoist-non-react-statics "^2.3.1"
 
@@ -5734,19 +5735,30 @@ react-navigation-redux-helpers@^1.0.0:
   dependencies:
     invariant "^2.2.2"
 
-react-navigation-tabs@0.5.1:
+"react-navigation-tabs@github:ChrisBlood/react-navigation-tabs":
   version "0.5.1"
-  resolved "https://registry.yarnpkg.com/react-navigation-tabs/-/react-navigation-tabs-0.5.1.tgz#ed33bce3a3e21b92646700de25bd94b8fc570371"
+  uid "2319299f276ddf0488bd8c8beba05288e51d2c7e"
+  resolved "https://codeload.github.com/ChrisBlood/react-navigation-tabs/tar.gz/2319299f276ddf0488bd8c8beba05288e51d2c7e"
   dependencies:
     hoist-non-react-statics "^2.5.0"
     prop-types "^15.6.1"
     react-lifecycles-compat "^3.0.4"
-    react-native-safe-area-view "^0.7.0"
+    react-native-safe-area-view "github:ChrisBlood/react-native-safe-area-view"
     react-native-tab-view "^1.0.0"
 
 "react-navigation@link:../..":
-  version "0.0.0"
-  uid ""
+  version "2.3.1"
+  dependencies:
+    clamp "^1.0.1"
+    create-react-context "^0.2.1"
+    hoist-non-react-statics "^2.2.0"
+    path-to-regexp "^1.7.0"
+    prop-types "^15.5.10"
+    react-lifecycles-compat "^3"
+    react-native-safe-area-view "^0.8.0"
+    react-navigation-deprecated-tab-navigator "1.3.0"
+    react-navigation-drawer "0.3.0"
+    react-navigation-tabs "github:ChrisBlood/react-navigation-tabs"
 
 react-prop-types-element-of-type@2.2.0:
   version "2.2.0"
